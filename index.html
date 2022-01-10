@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Frontend Mentor | Article preview component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+  </style>
+</head>
+<body class="bg-[#EDF2F8]">
+  <div class="wrap_all bg-white m-5 min-w-[340px] sm:overflow-hidden md:overflow-visible sm:max-w-[400px] sm:grid-cols-1 md:flex md:max-w-[768px] text-[13px] border rounded-xl mx-auto my-[10vh]">
+    
+    <div class="img_article md:w-1/2">
+      <img src="images/drawers.jpg" alt="" class="w-full h-full md:rounded-bl-2xl md:rounded-tl-xl">
+    </div>
+    <div class="info_card md:w-2/3 h-full relative">
+      <div class="info_article mx-10 my-8 flex flex-col">
+        <h1 class="text-lg font-[600]">
+          Shift the overall look and feel by adding these wonderful 
+      touches to furniture in your home.
+        </h1>
+        <p class="my-3 w-full flex text-sm text-gray-500">
+          Ever been in a room and felt like something was missing? Perhaps 
+      it felt slightly bare and uninviting. Ive got some simple tips 
+      to help you make any room feel complete.
+        </p>
+      </div>
+  
+      <div id="share_profile" class=" flex md:flex  justify-between items-center py-5 px-12 w-full">
+        <div class="profile flex items-center ">
+          <img src="images/avatar-michelle.jpg" alt="" class="h-[50px] rounded-full mr-4">
+          <div class="name_born flex flex-col justify-center">
+            <h2 class="font-semibold">Michelle Appleton</h2>
+            <p class="opacity-50">28 Jun 2020</p> 
+          </div>
+        </div>
+        <div onclick="share()" class="btn_share bg-gray-200 flex items-center justify-center w-[35px] h-[35px] rounded-full hover:cursor-pointer">
+          <img src="images/icon-share.svg" alt="" class="">
+        </div>
+      </div>
+  
+      <div id="share_profile_ac" class="hidden flex items-center bg-gray-600 py-5 px-12 md:absolute md:-right-[30px] md:bottom-20 md:p-0 md:px-2 md:rounded-xl">
+        <div class="profile w-full flex justify-between items-center">
+          <p class="h-[50px] bg-gray-600 text-white flex items-center tracking-[5px]">SHARE</p>
+          <div class="name_born flex justify-center">
+            <img src="images/icon-facebook.svg" alt="" class="mx-2">
+            <img src="images/icon-twitter.svg" alt="" class="mx-2"> 
+            <img src="images/icon-pinterest.svg" alt="" class="mx-2"> 
+          </div>
+          <div onclick="share()" class="md:hidden btn_share text-white bg-[#fff5] flex items-center justify-center w-[35px] h-[35px] rounded-full hover:cursor-pointer">
+            <img src="images/icon-share.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Gustavo Park</a>.
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
